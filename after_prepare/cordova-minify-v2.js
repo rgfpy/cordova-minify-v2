@@ -10,9 +10,10 @@ var fs = require('fs'),
     imageminGifsicle = require('imagemin-gifsicle'),
     imageminOptipng = require('imagemin-optipng'),
     htmlMinify = require('html-minifier').minify,
-    cssMinifier = new CleanCSS({
+    cssOptions = {
         keepSpecialComments: 0
-    }),
+    },
+    cssMinifier = new CleanCSS(cssOptions),
 
     rootDir = process.argv[2],
     platformPath = path.join(rootDir, 'platforms'),
@@ -20,13 +21,12 @@ var fs = require('fs'),
     cliCommand = process.env.CORDOVA_CMDLINE,
 
     debug = false,
+
     htmlOptions = {
         removeAttributeQuotes: true,
         removeComments: true,
         minifyJS: true,
-        minifyCSS: {
-            keepSpecialComments: 0
-        },
+        minifyCSS: cssOptions,
         collapseWhitespace: true,
         conservativeCollapse: true,
         removeComments: true,
@@ -62,7 +62,7 @@ function processFiles(dir, _noRecursive) {
                 if (stat.isDirectory()) {
                     if (!_noRecursive) processFiles(file);
                 } else {
-                    compress(file, dir); 
+                    compress(file, dir);
                 }
             });
         });

@@ -1,30 +1,33 @@
 {
-  "name": "cordova-minify",
-  "version": "0.0.15",
-  "description": "Cordova hook that uglifies and minifies your app's Javascript files, minifies CSS files, and compresses your image files.",
-  "homepage": "https://github.com/alastairparagas/cordova-minify",
+  "name": "cordova-minify-v2",
+  "version": "0.0.1",
+  "description": "Cordova hook that uglifies and minifies your app's Javascript, CSS and HTML files, as well as compresses your image files.",
+  "homepage": "https://github.com/adamerny/cordova-minify-v2",
   "keywords": [
     "cordova",
     "uglify",
     "minify",
     "hook",
     "hooks",
-    "cordova-minify"
+    "cordova-minify",
+    "cordova-minify-v2"
   ],
   "dependencies" : {
-    "uglify-js": "2.4.x",
-    "clean-css": "2.2.x",
-    "imagemin": "3.1.x"
+    "clean-css": "3.4.x",
+    "html-minifier": "2.1.x",
+    "imagemin": "5.2.x",
+    "imagemin-gifsicle": "5.1.x",
+    "imagemin-jpegtran": "5.0.x",
+    "imagemin-optipng": "5.1.x",
+    "imagemin-svgo": "5.1.x",
+    "uglify-js": "2.6.x"
   },
-  "author": "Alastair Paragas",
+  "author": "Adam Erny",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alastairparagas/cordova-minify/issues"
-  },
   "readmeFilename": "README.md",
   "repository" : {
     "type": "git",
-    "url": "https://github.com/alastairparagas/cordova-minify.git"
+    "url": "https://github.com/adamerny/cordova-minify-v2.git"
   },
   "scripts": {
     "postinstall": "node scripts/install.js",
