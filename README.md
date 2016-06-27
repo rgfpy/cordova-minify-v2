@@ -1,4 +1,4 @@
-# cordova-minify
+# cordova-minify-v2
 
 Cordova hook that uglifies and minifies your app's Javascript, CSS and HTML files, as well as compresses your image files. It is a modification of the work of [Ross Martin's original cordova-uglify](https://github.com/rossmartin/cordova-uglify) and [Alastair Paragas' modified version](https://github.com/alastairparagas/cordova-minify), with the added default parsing of your top-level app folder `www` as well as minifying of HTML files.
 
@@ -46,8 +46,8 @@ Out of the box this hook requires Cordova 3.3.1-0.4.2 and above but it can work 
 * On Linux and OSX: `hooks` folder needs to have permissions modified.  Perform a `chmod -R 755 /hooks` to resolve this issue.
 
 ## Original Work:
-[Ross Martin's original cordova-uglify](https://github.com/rossmartin/cordova-uglify)
-[Alastair Paragas](https://github.com/alastairparagas/cordova-minify)
+* [Ross Martin](https://github.com/rossmartin/cordova-uglify)
+* [Alastair Paragas](https://github.com/alastairparagas/cordova-minify)
 
 ## License
 [MIT](https://github.com/adamerny/cordova-minify-v2/blob/master/LICENSE)

@@ -27,5 +27,5 @@ fs.writeFileSync(minifyFileNewPath, minifyFile);
 
 console.log('Finished set-up! Your JS, CSS, HTML, and img files will be automatically compressed, and your JS files uglified!');
 console.log();
-console.log('cordova-minify - developed by Alastair Paragas@2014, Stela Inc. cordova-minify is an open-source/MIT project');
-console.log('cordova-minify-v2 - modified by Adam Erny@2016, Element Studios LLC cordova-minify-v2 is an open-source/MIT project');
+console.log('Original Work: cordova-minify - developed by Alastair Paragas@2014, Stela Inc. cordova-minify is an open-source/MIT project');
+console.log('cordova-minify-v2 - developed by Adam Erny@2016, Element Studios LLC cordova-minify-v2 is an open-source/MIT project');
